@@ -19,7 +19,7 @@ before_script:
 
 script:
   - ng lint
-  - ng build --prod build --base-href https://dlevkov.github.io/ng7-virtual-scroll/
+  - ng build --prod --base-href https://dlevkov.github.io/ng7-virtual-scroll/
 deploy:
   provider: pages
   skip-cleanup: true
