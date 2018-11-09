@@ -3,26 +3,28 @@
 language: node_js
 node_js:
   - "10"
+dist: trusty
+sudo: false
 
 branches:
   only:
     - master
 
+cache:
+  directories:
+    - node_modules
+
 before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod
-
+  - ng lint
+  - ng build --prod build --base-href https://dlevkov.github.io/ng7-virtual-scroll/
 deploy:
-  provider: releases
+  provider: pages
   skip-cleanup: true
-  api_key: $GITHUB_TOKEN
-  file_glob: true
-  file: dist/virtual-scroll/**/*
-  on:
-    branch: master
-
+  github-token: $GITHUB_TOKEN
+  local_dir: dist/virtual-scroll
 
 notifications:
   email:
