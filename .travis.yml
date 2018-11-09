@@ -1,0 +1,30 @@
+#.travis.yml
+
+language: node_js
+node_js:
+  - "10"
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng build --prod
+
+deploy:
+  provider: releases
+  skip-cleanup: true
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: dist/virtual-scroll/**/*
+  on:
+    branch: master
+
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
