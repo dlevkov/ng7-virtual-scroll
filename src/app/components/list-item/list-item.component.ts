@@ -8,7 +8,7 @@ import * as fromAnimations from '../../animations';
   selector: 'app-list-item',
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.scss'],
-  animations: [fromAnimations.scrollIn, fromAnimations.fadeInOut],
+  animations: [fromAnimations.scrollIn],
 })
 export class ListItemComponent implements OnInit {
   @Input() item: { title: string; content: string };
