@@ -1,5 +1,5 @@
 # VirtualScroll
-[![Build Status](https://travis-ci.org/dlevkov/ng7-virtula-scroll.svg?branch=master)](https://travis-ci.org/dlevkov/ng7-virtula-scroll)
+[![Build Status](https://travis-ci.org/dlevkov/ng7-virtual-scroll.svg?branch=master)](https://travis-ci.org/dlevkov/ng7-virtula-scroll)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
