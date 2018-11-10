@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { NgxLoremIpsumService } from 'ngx-lorem-ipsum';
+import { NgxLoremIpsumService } from 'ngx-lorem-ipsum/lib/ngx-lorem-ipsum.service';
+
 
 @Injectable({
   providedIn: 'root',
