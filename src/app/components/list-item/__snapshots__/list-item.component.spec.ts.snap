@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemComponent should render input 1`] = `
+<div
+  class="ng-tns-c1-0"
+  id="root1"
+  ng-version="7.0.3"
+>
+  <mat-card
+    class="card-width ng-trigger ng-trigger-scrollAnimation ng-animating"
+    style=""
+  >
+    <mat-card-header
+      class="ng-tns-c1-0"
+    >
+      <mat-card-title
+        class="ng-tns-c1-0"
+      >
+        tit
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content
+      class="ng-tns-c1-0"
+    >
+       con 
+    </mat-card-content>
+  </mat-card>
+  <mat-divider
+    class="ng-tns-c1-0"
+  />
+</div>
+`;
