@@ -1,3 +1,3 @@
 <cdk-virtual-scroll-viewport class="container-size" [itemSize]="100">
-  <app-list-item *cdkVirtualFor="let item of items | async" [item]="item"></app-list-item>
+  <app-list-item *cdkVirtualFor="let item of items$ | async" [item]="item"></app-list-item>
 </cdk-virtual-scroll-viewport>

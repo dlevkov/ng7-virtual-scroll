@@ -7,11 +7,11 @@ import { DataProviderService } from 'src/app/data-provider.service';
   styleUrls: ['./list-container.component.scss'],
 })
 export class ListContainerComponent implements OnInit {
-  items: Observable<{ title: string; content: string }[]>;
+  items$: Observable<{ title: string; content: string }[]>;
   constructor(private service: DataProviderService) {}
 
   ngOnInit() {
-    this.items = of(this.generateItems(this.generateMaxNumber()));
+    this.items$ = of(this.generateItems(this.generateMaxNumber()));
   }
   generateMaxNumber(): number {
     return Math.floor(Math.random() * 500 + 1);
